@@ -29,7 +29,7 @@
 
     .top-section {
         width: 100vw;
-        background: no-repeat url("../images/background-1.png");
+        background: no-repeat url("../images/background-1.webp");
         background-size: cover;
         display: grid;
         grid-template-rows: 1fr 1fr 0.5fr 1.5fr ;
