@@ -1,283 +1,242 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: white;
-        font-size: 10px;
-    }
-
-    @font-face {
-        font-family: "unbounded";
-        src: url("../fonts/Unbounded-VariableFont_wght.ttf");
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "abeezee";
-        src: url("../fonts/InterTight-VariableFont_wght.ttf");
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .text-gradient {
-        background: linear-gradient(91.17deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .top-section {
-        width: 100vw;
-        background: no-repeat url("../images/background-1.webp");
-        background-size: cover;
-        display: grid;
-        grid-template-rows: 1fr 1fr 0.5fr 1.5fr ;
-
-    }
-
-    nav ul{
-
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: repeat(24,1fr);
-        grid-template-rows: 6.7rem 6.7rem ;
-        padding: 4.8rem 9.8rem;
-
-    }
-    nav #logo {
-        grid-column: 1 / 9;
-        grid-row: 1 / 3;
-        padding: 5rem 0;
-    }
-    #logo div {
-        
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #logo-slogan {
-        font-family: "unbounded";
-        font-weight: bolder;
-        font-size: 1.5rem;
-        line-height: 1.1;
-    }
-
-    nav #language-icon {
-        grid-column: -1 / -2;
-        border-bottom: 0;
-        border-left: 0;
-    }
-    nav #about {
-        grid-column: 9/12;
-        border-bottom: 0;
-        border-left: 0;
-    }
-    nav #services {
-        grid-column: 12/17;
-        border-bottom: 0;
-        border-left: 0;
-    }
-    nav #cases {
-        grid-column: 17/21;
-        border-bottom: 0;
-        border-left: 0;
-    }
-    nav #team {
-        grid-column: 21/24;
-        border-bottom: 0;
-        border-left: 0;
-    }
-
-    nav #boost-program {
-        grid-column: 9/15;
-        border-left: 0;
-    }
-
-    nav #product {
-        grid-column: 15/19;
-        border-left: 0;
-    }
-    nav #book {
-        grid-column: 19/22;
-        border-left: 0;
-    }
-    nav #blog {
-        grid-column: 22/26;
-        border-left: 0;
-    }
-
-
-    nav ul li {
-        border: 2px solid white;
-        font-family: "abeezee";
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding-bottom: 3rem;
-        padding-top: 2.5rem;
-        text-align: center;
-    }
-
-    .slogan {
-        grid-row: -1;
-        background-color: rgba(0,0,0,70%);
-    }
-
-    .slogan ul {
-        display: flex;
-        align-content: center;
-    }
-
-    .slogan li {
-        flex:1;
-        /* box-sizing: content-box; */
-        list-style-type: none;
-        border-bottom: 2px solid white;
-        padding-bottom: 2.3rem;
-        margin: 7rem;
-        font-family: "unbounded" , Helvetica, sans-serif;
-        font-size: 1.5rem;
-        font-weight: light;
-        letter-spacing: .1rem;
-    }
-
-
-    .greeting-text {
-        grid-row: -1/-2;
-        margin-left: 12rem;
-        margin-right: 9.6rem;
-        margin-bottom: 9.2rem;
-        margin-top: 4rem;
-        display: flex;
-        flex-wrap: wrap ;
-        justify-content: space-between;
-        /* align-items: flex-end; */
-    }
-
-    .unbounded-font {
-        font-family: "unbounded";
-    }
-
-
-
-
-     h1 {
-        display: inline;
-        font-size: 5.4rem;
-        line-height: 7rem;
-        padding-top: 8.5rem;
-        letter-spacing: 1rem;
-        font-weight: lighter;
-        
-    }
-    .top-section h1 span {
-        font-size: inherit;
-        text-decoration: overline;
-        text-decoration-color: plum;
-        text-decoration-style: wavy;
-        text-decoration-thickness: 0.3rem;
-
-    }
-
-    .greeting-text p {
-        font-family: "abeezee";
-        font-size: 1.6rem;
-        
-        padding-top: 2.1rem;
-    }
-
-    #small-tip {
-        font-size: 1.6rem;
-        font-weight: bold;
-        display: inline-block;
-        line-height: 3rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 10px;
+}
+@font-face {
+    font-family: "unbounded";
+    src: url("../fonts/Unbounded-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "abeezee";
+    src: url("../fonts/InterTight-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.text-gradient {
+    background: linear-gradient(91.17deg, #C6F1F7 -4.01%, #F983E9 36.14%, #B877FF 77.44%, #C2E9CD 106.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.top-section {
+    width: 100vw;
+    background: no-repeat url("../images/background-1.webp");
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr 1.5fr ;
+}
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: 6.7rem 6.7rem ;
+    padding: 4.8rem 9.8rem;
+}
+nav #logo {
+    grid-column: 1 / 9;
+    grid-row: 1 / 3;
+    padding: 5rem 0;
+}
+#logo div {
     
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo-slogan {
+    font-family: "unbounded";
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+nav #language-icon {
+    grid-column: -1 / -2;
+    border-bottom: 0;
+    border-left: 0;
+}
+nav #about {
+    grid-column: 9/12;
+    border-bottom: 0;
+    border-left: 0;
+}
+nav #services {
+    grid-column: 12/17;
+    border-bottom: 0;
+    border-left: 0;
+}
+nav #cases {
+    grid-column: 17/21;
+    border-bottom: 0;
+    border-left: 0;
+}
+nav #team {
+    grid-column: 21/24;
+    border-bottom: 0;
+    border-left: 0;
+}
+nav #boost-program {
+    grid-column: 9/15;
+    border-left: 0;
+}
+nav #product {
+    grid-column: 15/19;
+    border-left: 0;
+}
+nav #book {
+    grid-column: 19/22;
+    border-left: 0;
+}
+nav #blog {
+    grid-column: 22/26;
+    border-left: 0;
+}
+nav ul li {
+    border: 2px solid white;
+    font-family: "abeezee";
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+.slogan {
+    grid-row: -1;
+    background-color: rgba(0,0,0,70%);
+}
+.slogan ul {
+    display: flex;
+    align-content: center;
+}
+.slogan li {
+    flex:1;
+    /* box-sizing: content-box; */
+    list-style-type: none;
+    border-bottom: 2px solid white;
+    padding-bottom: 2.3rem;
+    margin: 7rem;
+    font-family: "unbounded" , Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: light;
+    letter-spacing: .1rem;
+}
+.greeting-text {
+    grid-row: -1/-2;
+    margin-left: 12rem;
+    margin-right: 9.6rem;
+    margin-bottom: 9.2rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+.unbounded-font {
+    font-family: "unbounded";
+}
+ h1 {
+    display: inline;
+    font-size: 5.4rem;
+    line-height: 7rem;
+    padding-top: 8.5rem;
+    letter-spacing: 1rem;
+    font-weight: lighter;
+    
+}
+.top-section h1 span {
+    font-size: inherit;
+    text-decoration: overline;
+    text-decoration-color: plum;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.3rem;
+}
+.greeting-text p {
+    font-family: "abeezee";
+    font-size: 1.6rem;
+    
+    padding-top: 2.1rem;
+}
+#small-tip {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 3rem;
 
-    .date {
-        grid-row: 3/4;
-        font-family: "unbounded";
-        margin-left: 12rem;
-    }
-    .date span:last-child {
-        font-size: 1.3rem;
-        display: inline-block;
-        margin-left: 5rem;
-        line-height: 1.3rem;
-        font-weight: lighter;
-    }
-
-    #text-2023 {
-        font-size: 2.7rem;
-        font-weight: lighter;
-    }
-
-
-
-    /* --------------------------------------------------second-section---------------------------------------------------------*/
-    .second-section{
-        padding:  10.4rem 11rem 16rem 7rem;
-        width: 100vw;
-        background-color: rgba(17, 17, 17, 1);
-    }
-
-    .second-section > div{
-        display: grid;
-        grid-template-columns: 1.26fr 1.63fr 1fr 1fr;
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas: 
-        "little top-paragraph . ."
-        "big big big ."
-        "stars down-paragraph . pic" 
-        ;
-    }
-    .second-section h1{
-        grid-area: big;
-        font-weight: lighter;
-    }
-
-    .second-section h1 span {
-        font-size: inherit;
-        text-decoration: underline wavy plum .2rem;
-
-    }
-
-    #card-image{
-        grid-area: pic;
-    }
-
-    #london {
-        grid-area: little;
-        font-family: "abeezee";
-        font-size: 1.6rem;
-        font-weight: bolder;
-        display: flex;
-        align-items: flex-end;
-    }
-    #three-stars {
-        grid-area: stars;
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .second-section .top-text {
-        grid-area: top-paragraph;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-end;
-
-    }
-
-    .second-section .bottom-text {
-        grid-area: down-paragraph;
-    }
-
-    .second-section p {
-        font-size: 1.8rem;
-        font-family: "abeezee";
-    }
-        /* --------------------------------------------------third-section---------------------------------------------------------*/
-
+}
+.date {
+    grid-row: 3/4;
+    font-family: "unbounded";
+    margin-left: 12rem;
+}
+.date span:last-child {
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-left: 5rem;
+    line-height: 1.3rem;
+    font-weight: lighter;
+}
+#text-2023 {
+    font-size: 2.7rem;
+    font-weight: lighter;
+}
+/* --------------------------------------------------second-section---------------------------------------------------------*/
+.second-section{
+    padding:  10.4rem 11rem 16rem 7rem;
+    width: 100vw;
+    background-color: rgba(17, 17, 17, 1);
+}
+.second-section > div{
+    display: grid;
+    grid-template-columns: 1.26fr 1.63fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "little top-paragraph . ."
+    "big big big ."
+    "stars down-paragraph . pic" 
+    ;
+}
+.second-section h1{
+    grid-area: big;
+    font-weight: lighter;
+}
+.second-section h1 span {
+    font-size: inherit;
+    text-decoration: underline wavy plum .2rem;
+}
+#card-image{
+    grid-area: pic;
+}
+#london {
+    grid-area: little;
+    font-family: "abeezee";
+    font-size: 1.6rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+}
+#three-stars {
+    grid-area: stars;
+    display: flex;
+    align-items: flex-end;
+}
+.second-section .top-text {
+    grid-area: top-paragraph;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.second-section .bottom-text {
+    grid-area: down-paragraph;
+}
+.second-section p {
+    font-size: 1.8rem;
+    font-family: "abeezee";
+}
+    /* --------------------------------------------------third-section---------------------------------------------------------*/
 .third-section {
     padding: 9.6rem;
     background-color: rgba(17, 17, 17, 1);
