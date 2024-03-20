@@ -277,3 +277,62 @@
         font-family: "abeezee";
     }
         /* --------------------------------------------------third-section---------------------------------------------------------*/
+
+.third-section {
+    padding: 9.6rem;
+    background-color: rgba(17, 17, 17, 1);
+}
+
+.third-section > div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "one two"
+    "three four"
+    ;
+    
+}
+.third-section span {
+    font-family: "unbounded";
+    font-size: 4rem;
+    margin-bottom: 3.8rem;
+    margin-top: 10.3rem;
+    display: block;
+}
+.third-section p {
+    width: 27.6rem;
+    height: 5.1rem;
+    font-family: "abeezee";
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-bottom: 4.5rem;
+}
+
+.third-section > div div:nth-child(1){
+    padding: 10.3rem 0 4.5rem 4.8rem;
+    grid-area: one;
+    background: url("../images/card-background-one.webp");
+}
+
+.third-section > div div:nth-child(2){
+    padding: 10.3rem 0 4.5rem 4.8rem;
+    grid-area: two;
+    background: url("../images/card-background-two.webp");
+
+}
+
+.third-section > div div:nth-child(3){
+    padding: 10.3rem 0 4.5rem 4.8rem;
+    grid-area: three;
+    background: url("../images/card-background-three.webp");
+
+}
+
+.third-section > div div:nth-child(4){
+    padding: 10.3rem 0 4.5rem 4.8rem;
+    grid-area: four;
+    background: url("../images/card-background-four.webp");
+
+}
+
