@@ -161,7 +161,7 @@
 
 
 
-    .top-section div h1 {
+     h1 {
         display: inline;
         font-size: 5.4rem;
         line-height: 7rem;
@@ -170,7 +170,7 @@
         font-weight: lighter;
         
     }
-    h1 span {
+    .top-section h1 span {
         font-size: inherit;
         text-decoration: overline;
         text-decoration-color: plum;
@@ -211,3 +211,69 @@
         font-size: 2.7rem;
         font-weight: lighter;
     }
+
+
+
+    /* --------------------------------------------------second-section---------------------------------------------------------*/
+    .second-section{
+        padding:  10.4rem 11rem 16rem 7rem;
+        width: 100vw;
+        background-color: rgba(17, 17, 17, 1);
+    }
+
+    .second-section > div{
+        display: grid;
+        grid-template-columns: 1.26fr 1.63fr 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "little top-paragraph . ."
+        "big big big ."
+        "stars down-paragraph . pic" 
+        ;
+    }
+    .second-section h1{
+        grid-area: big;
+        font-weight: lighter;
+    }
+
+    .second-section h1 span {
+        font-size: inherit;
+        text-decoration: underline wavy plum .2rem;
+
+    }
+
+    #card-image{
+        grid-area: pic;
+    }
+
+    #london {
+        grid-area: little;
+        font-family: "abeezee";
+        font-size: 1.6rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: flex-end;
+    }
+    #three-stars {
+        grid-area: stars;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .second-section .top-text {
+        grid-area: top-paragraph;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+
+    }
+
+    .second-section .bottom-text {
+        grid-area: down-paragraph;
+    }
+
+    .second-section p {
+        font-size: 1.8rem;
+        font-family: "abeezee";
+    }
+        /* --------------------------------------------------third-section---------------------------------------------------------*/
